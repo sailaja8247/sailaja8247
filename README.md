@@ -1,16 +1,27 @@
-### Hi there 👋
 
-<!--
-**sailaja8247/sailaja8247** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> checkbox</title>
+    <script>
+        function checkanswer(){
+            var answer = document.getElementById("input").value.toLowerCase();
+            if ( answer ==="ol"){
+                document.getElementById("result").innerHTML="correct!";
+                document.getElementById("result").style.color="green";
+            }
+            else{
+                document.getElementById("result").innerHTML="incorrect Answer!";
+                document.getElementById("result").style.color="red";
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <p>what tag is used to Createan ordered list ?</p>
+        <input type="text" id="input">
+        <button class=" btn btn-info" onclick="checkanswer()"> check Answer</button>
+        <p id ="result"></p>
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    </body>
+</html>
